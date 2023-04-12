@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="iphone-x">
+            <div class="screen">
+                <div class="header">
+                    <div class="time" id="time">
+                        <script>
+                            var time = document.getElementById('time').innerHTML;
+                            var today = new Date();
+                            var time = today.getHours() + ":" + today.getMinutes();
+                             time = document.write(time);
+                            
+                        </script>
+                    </div>
+                    <div class="notch"></div>
+                    <div class="right_area">
+                        <div class="battery">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-battery" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0b0b0b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M6 7h11a2 2 0 0 1 2 2v.5a0.5 .5 0 0 0 .5 .5a0.5 .5 0 0 1 .5 .5v3a0.5 .5 0 0 1 -.5 .5a0.5 .5 0 0 0 -.5 .5v.5a2 2 0 0 1 -2 2h-11a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wifi" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0b0b0b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                                <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
+                                <path d="M6.343 12.343a8 8 0 0 1 11.314 0" />
+                                <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0" />
+                              </svg>
+                        </div>
+                        <div class="wifi">
+                           
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text">
+                    <h1>casio</h1>
+                    <h2>calculator</h2>
+                    </div>
+                    <div class="boxs">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+                <form class="calculator container">
+                    <input type="text" placeholder="o" name="displayResult" class="area">
+                    <div class="key conta
+                    " id="keyBord">
+                    <div class="first-col">
+
+                    <div class="button">
+                        <button id="num" type="button" name="" value="AC" 
+                        onclick="displayResult.value=''" id="c"
+                        >AC</button>
+
+                        <button id="num" type="button" name="" value="+/-" 
+                        onclick="makeNegative(displayResult.value)"id="c">+/-</button>
+
+                        <button id="num" type="button" name="" value="%" 
+                        onclick="calcNumbers(this.value)"id="c">%</button>
+
+                        <button id="num" type="button" name="" value="/" 
+                        onclick="calcNumbers(this.value)"id="eql">/</button>
+                        <i class="fa fa-divide"
+                        /</button>
+        
+                    </div>
+                    </div>
+                    <div class="first-col">
+                        <button id="num" type="button" name="" value="7" 
+                        onclick="calcNumbers(this.value)"id="c">7</button>
+
+                        <button id="num" type="button" name="" value="8" 
+                        onclick="calcNumbers(this.value)"id="c">8</button>
+
+                        <button id="num" type="button" name="" value="9" 
+                        onclick="calcNumbers(this.value)"id="c">9</button>
+
+                        <button id="num" type="button" name="" value="*" 
+                        onclick="calcNumbers(this.value)"id="eql">X</button>
+                    </div>
+
+                    <div class="first-col">
+                        
+                        <button id="num" type="button" name="" value="4" class="btn-work"
+                        onclick="calcNumbers(this.value)"id="c">4</button>
+
+                        
+                        <button id="num" type="button" name="" value="5" class="btn-work"
+                        onclick="calcNumbers(this.value)"id="c">5</button>
+
+                        
+                        <button id="num" type="button" name="" value="6" class="btn-work"
+                        onclick="calcNumbers(this.value)"id="c">6</button>
+
+                        
+                        <button id="num" type="button" name="" value="-" class="btn-work"
+                        onclick="calcNumbers(this.value)"id="eql">-</button>
+                    </div>
+                    <div class="first-col">
+                        
+                        <button id="num" type="button" name="" value="1" 
+                        onclick="calcNumbers(this.value)"id="c">1</button>
+
+                        
+                        <button id="num" type="button" name="" value="2" 
+                        onclick="calcNumbers(this.value)"id="c">2</button>
+
+                        
+                        <button id="num" type="button" name="" value="3" 
+                        onclick="calcNumbers(this.value)"id="c">3</button>
+
+                        
+                        <button id="num" type="button" name="" value="+" 
+                        onclick="calcNumbers(this.value)"id="eql" class="btn-work" >+</button>
+                    </div>
+                    <div class="second-col">
+                        
+                        <button id="num" type="button" name="" value="0" class="zroo"
+                        onclick="calcNumbers(this.value)">0</button>
+
+                        
+                        <button id="num" type="button" name="" value="."
+                        onclick="calcNumbers(this.value)">.</button>
+
+                        
+                        <button id="num" type="button" name="" value="=" class="btn-equal"
+                        onclick="(displayResult.value.includes('%'))?percentage(displayResult.value):displayResult.value=eval(displayResult.value);"id="eql">=</button>
+
+                        
+                        
+                    </div>
+                </div>
+
+
+                </form>
+                <div class="menu">
+
+                </div>
+
+         
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
