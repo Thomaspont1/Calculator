@@ -77,14 +77,16 @@ body {
  .content .text h1{
     font-size: 18px;
     color: #0b0b0b;
-    margin: 0;
+  
+    
  }
 
  .content .text h2{
     font-size: 15px;
     color: rgb(178, 178, 178);
-    margin: 0;
+   
     font-family: 'Roboto', sans-serif;
+    
  }
  .boxs{
     display: flex;
@@ -106,7 +108,7 @@ body {
  }
  .area {
     width: 100%;
-    min-height: 120px;
+    min-height: 10px;
     font-size: 30px;
     text-align: right;
     overflow: scroll;
@@ -114,37 +116,34 @@ body {
     font-weight: 400;
     color: var(--bgd);
     border: 4px solid var(--bgd);
-    border-radius: 2px;
+    border-radius: 12px;
     padding: 10px;
     box-shadow: 0.2rem 0.2rem 0 #0b0b0b ;
  }
  .calculator{
     margin-top: 8px;
     padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+   
  }
 
- .key{
+ .keys{
     font-size: 15px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     flex-direction: column;
-    gap: 12px;
+    
  }
- .first-col,
- .second-col{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    justify-content: center;
- }
+ 
+  
  button{
     position: relative;
     width: 58px;
     height: 58px;
     text-align: center;
-    padding: 0px;
     color: var(--bgd);
     border-radius: 8px;
     outline: none;
@@ -155,4 +154,31 @@ body {
     box-shadow: 0.2rem 0.2rem 0 #0b0b0b;
     scale: 0.9;
     transition: all 0.3s ease;
+    margin-top: 10px;
  }
+ button:focus{
+   cursor: pointer;
+   outline:none;
+ }
+ button:active{
+   scale: 1,1;
+ }
+ .zroo{
+    width: 125px;
+ }
+
+ 
+ .mis{
+   color: #ee9b4b !important;
+   transition: all 0.3s ease;
+ }
+ .mis:hover {
+   background: #e2c2a4;
+ }
+ .mes{
+   color:#46c7e7 ;
+ }
+ .mes:hover {
+   background: #a3deec   ;
+ }
+ 

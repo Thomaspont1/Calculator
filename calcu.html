@@ -59,75 +59,72 @@
                 </div>
                 <form class="calculator container">
                     <input type="text" placeholder="o" name="displayResult" class="area">
-                    <div class="key conta
-                    " id="keyBord">
+                    <div class="keys">
                     <div class="first-col">
 
                     <div class="button">
                         <button id="num" type="button" name="" value="AC" 
-                        onclick="displayResult.value=''" id="c"
-                        >AC</button>
+                        onclick="displayResult.value=''" class="mes">AC</button>
 
                         <button id="num" type="button" name="" value="+/-" 
-                        onclick="makeNegative(displayResult.value)"id="c">+/-</button>
+                        onclick="makeNegative(displayResult.value)"class="mes">+/-</button>
 
                         <button id="num" type="button" name="" value="%" 
-                        onclick="calcNumbers(this.value)"id="c">%</button>
+                        onclick="calcNumbers(this.value)" class="mes">%</button>
 
                         <button id="num" type="button" name="" value="/" 
-                        onclick="calcNumbers(this.value)"id="eql">/</button>
-                        <i class="fa fa-divide"
-                        /</button>
+                        onclick="calcNumbers(this.value)"class="mes">/</button>
+                        </button>
         
                     </div>
                     </div>
                     <div class="first-col">
                         <button id="num" type="button" name="" value="7" 
-                        onclick="calcNumbers(this.value)"id="c">7</button>
+                        onclick="calcNumbers(this.value)">7</button>
 
                         <button id="num" type="button" name="" value="8" 
-                        onclick="calcNumbers(this.value)"id="c">8</button>
+                        onclick="calcNumbers(this.value)">8</button>
 
                         <button id="num" type="button" name="" value="9" 
-                        onclick="calcNumbers(this.value)"id="c">9</button>
+                        onclick="calcNumbers(this.value)">9</button>
 
                         <button id="num" type="button" name="" value="*" 
-                        onclick="calcNumbers(this.value)"id="eql">X</button>
+                        onclick="calcNumbers(this.value)" class="mis">X</button>
                     </div>
 
                     <div class="first-col">
                         
                         <button id="num" type="button" name="" value="4" class="btn-work"
-                        onclick="calcNumbers(this.value)"id="c">4</button>
+                        onclick="calcNumbers(this.value)">4</button>
 
                         
                         <button id="num" type="button" name="" value="5" class="btn-work"
-                        onclick="calcNumbers(this.value)"id="c">5</button>
+                        onclick="calcNumbers(this.value)">5</button>
 
                         
                         <button id="num" type="button" name="" value="6" class="btn-work"
-                        onclick="calcNumbers(this.value)"id="c">6</button>
+                        onclick="calcNumbers(this.value)">6</button>
 
                         
-                        <button id="num" type="button" name="" value="-" class="btn-work"
-                        onclick="calcNumbers(this.value)"id="eql">-</button>
+                        <button id="num" type="button" name="" value="-" 
+                        onclick="calcNumbers(this.value)"class="mis">-</button>
                     </div>
                     <div class="first-col">
                         
                         <button id="num" type="button" name="" value="1" 
-                        onclick="calcNumbers(this.value)"id="c">1</button>
+                        onclick="calcNumbers(this.value)">1</button>
 
                         
                         <button id="num" type="button" name="" value="2" 
-                        onclick="calcNumbers(this.value)"id="c">2</button>
+                        onclick="calcNumbers(this.value)">2</button>
 
                         
                         <button id="num" type="button" name="" value="3" 
-                        onclick="calcNumbers(this.value)"id="c">3</button>
+                        onclick="calcNumbers(this.value)">3</button>
 
                         
                         <button id="num" type="button" name="" value="+" 
-                        onclick="calcNumbers(this.value)"id="eql" class="btn-work" >+</button>
+                        onclick="calcNumbers(this.value)" class="mis" >+</button>
                     </div>
                     <div class="second-col">
                         
@@ -139,24 +136,25 @@
                         onclick="calcNumbers(this.value)">.</button>
 
                         
-                        <button id="num" type="button" name="" value="=" class="btn-equal"
+                        <button id="num" type="button" name="" value="=" class="mis"
                         onclick="(displayResult.value.includes('%'))?percentage(displayResult.value):displayResult.value=eval(displayResult.value);"id="eql">=</button>
 
                         
                         
                     </div>
                 </div>
+                    
 
 
                 </form>
-                <div class="menu">
+                
 
-                </div>
-
-         
+        
             
             </div>
         </div>
     </div>
+
+    <script src="/js.js"></script>
 </body>
 </html>
